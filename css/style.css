@@ -1,0 +1,342 @@
+/* ***************************
+GENERALITES
+******************************* */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth;}
+
+/* Largeur du contenu */
+.container {
+    width: 1200px;
+    margin-inline: auto;
+}
+
+
+/* Couleurs des textes */
+body {
+    color: #363636;
+}
+
+h1,
+h3,
+.titre3 {
+    color: #7e4a7c;
+}
+
+h2 {
+    color: #b878b5;
+}
+
+/* Polices */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.titre3,
+nav,
+.more,
+.button {
+    font-family: Economica, sans-serif;
+}
+
+/* Taille des Polices */
+body { font-size: 14px;}
+
+h1 { 
+    font-size: 50px; 
+}
+
+h2 { font-size: 40px;}
+
+h3,
+.titre3 { font-size: 30px;}
+
+nav { font-size: 24px;}
+
+.more { 
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ****************************
+HEADER
+********************************* */
+.header {
+    text-align: center;
+}
+
+nav {
+    background-color: #7e4a7c;
+    padding: 0.1em;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.7em;
+}
+
+nav ul li a:hover {
+    color: #7e4a7c;
+    background-color: #fff;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 190px;
+}
+
+h1 {
+    padding-block: 30px;
+}
+
+/*************************************
+MAIN
+*************************************/
+/* About the School */
+.titre3 { font-weight: bold;}
+
+.about1 h3:first-child {
+    display: none;
+}
+
+.about1 {
+    column-count: 3;
+}
+
+.about1 ul li {
+    list-style-image: url(../img/puce-fleche.png);
+    margin-left: 25px;
+}
+
+.about1 ul {
+    padding-left: 0;
+    line-height: 35px;
+}
+
+.about1 a {
+    border: 1px solid #7e4a7c;
+    color: #fff;
+    background-color: #7e4a7c;
+    padding: 0.5em 0.8em;
+}
+
+.about1 a:hover {
+    color: #7e4a7c;
+    background-color: #fff;
+    font-style: italic;
+}
+
+.p3 {
+    margin-bottom: 20px;
+}
+
+.p-in-color {
+    color: #b878b5;
+    font-style: italic;
+}
+
+/* Our teachers */
+.allteachers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.allteachers img {
+    float: left;
+    padding-right: 10px;
+}
+
+.allteachers article {
+    width: 50%;
+    text-align: left;
+}
+
+.allteachers article:nth-last-of-type(-n+2) {
+    padding-top: 40px;
+}
+
+.allteachers h3 {
+    margin-top: 0;
+}
+
+.allteachers a {
+    border: 1px solid #7e4a7c;
+    color: #fff;
+    background-color: #7e4a7c;
+    padding: 0.5em 0.8em;
+}
+
+.allteachers a:hover {
+    color: #7e4a7c;
+    background-color: #fff;
+    font-style: italic;
+}
+
+.allteachers article p:nth-last-of-type(1) {
+    margin-bottom: 40px;
+}
+
+.allteachers article p:first-of-type {
+    color: #b878b5;
+    font-style: italic;
+}
+
+/* Our classes */
+th,
+td {
+    border: 1px solid #eeb1eb;
+    padding-block: 1em;
+    text-align: center;
+}
+
+th {
+    background-color: #7e4a7c;
+    color: #fff;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-inline: auto;
+}
+
+td:nth-of-type(1) {
+    font-weight: bold;
+}
+
+td:empty {
+    background-color: #ffe5ff;
+}
+
+/* Book your lesson */
+form {
+    border: 1px solid #eeb1eb;
+    padding: 1em;
+}
+
+.line1 {
+    display: flex;
+    padding: 1.5em 0.8em;
+    background-color: #ffe5ff;
+    margin-bottom: 15px;
+}
+
+.line1 div {
+    flex-basis: 50%;
+}
+
+.line1 div input {
+    width: 70%;
+    border: 1px solid #eeb1eb;
+}
+
+label {
+    margin-right: 10px;
+}
+
+/*  */
+.line2 {
+    display: flex;
+    padding: 1.5em 0.8em;
+    background-color: #ffe5ff;
+    margin-bottom: 15px;
+}
+
+.line2 div {
+    flex-basis: calc(100% / 3);
+}
+
+.line2 div select {
+    width: 70%;
+    background-color: #fff;
+    border: 1px solid #eeb1eb;
+}
+
+/*  */
+.toolbar {
+    text-align: center;
+}
+
+.button {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0.5em 0.75em;
+    color: #fff;
+    background-color: #7e4a7c;
+    border: 1px solid #eeb1eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #7e4a7c;
+    background-color: #fff;
+}
+
+
+/* ----------------------------------
+FOOTER
+---------------------------------------- */
+.footer {
+    margin-top: 80px;
+    background-color: rgb(10, 9, 9);
+}
+
+/* iconbar */
+.iconbar {
+    background-color: #7e4a7c;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.iconbar a {
+    text-decoration: none;
+}
+.fab {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.3em 0.6em;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    color: #558f14;
+    border: 1px solid rgb(168, 144, 5);
+    
+}
+.fab:not(.fa-instagram) {
+    margin-right: 40px;
+}
+
+/* academybar */
+.academybar {
+    margin-top: 0;
+    background-color: rgb(10, 9, 9);
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.academybar img {
+    width: 75px;
+    padding-top: 1em;
+}
+.academybar a {
+    color: #fff;
+}
